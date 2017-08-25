@@ -2,14 +2,33 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
+import VueRouter from 'vue-router';
+import { routes } from './routes';
+Vue.use(VueRouter);
+const router = new VueRouter({  routes});
+Vue.config.productionTip = true
 
-Vue.config.productionTip = false
+/**   LIBRARIES */
 
-/* eslint-disable no-new */
-new Vue({
+
+/**   COMPONENTS  -  Name convention: funkyMonkey   */
+
+
+
+import NewTemplate from './components/NewTemplate'
+Vue.component('NewTemplate',NewTemplate)
+
+
+import funkyMonkey from './components/funkyMonkey'
+Vue.component('funkyMonkey',funkyMonkey)
+
+import lodash from './components/lib_objects/lodash.vue'
+Vue.component('lodash',lodash)
+
+const app = new Vue({
   el: '#app',
   router,
   template: '<App/>',
   components: { App }
 })
+
