@@ -1,4 +1,5 @@
 import home from            './App.vue';
+import dataCachePage from            './components/DataCachePage.vue';
 /* 
 import login from            './components/auth/login.vue';
 import dashboard from            './components/page/dashboard.vue';
@@ -12,6 +13,7 @@ import project from            './components/page/project.vue';
 
 export const routes = [
 {path: '#',  name: 'home',  components:  home }, 
+{path: '/dataCachePage',  name: 'dataCachePage',  components: { default: dataCachePage }  ,  meta: {    forAuth: true  }  },
 /* 
 {path: '/login',  name: 'login',  components: { default: login },  meta: {    forVisitors: true  }}, 
 {path: '/register',  name: 'register',  components: { default: login },  meta: {    forVisitors: true  }  }, 
