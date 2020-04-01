@@ -38,7 +38,7 @@
       return {
 
         showSidebar: true,
-        active: "NestedObjectPage",
+        active: "DataTools",
         description: "select components in the menu",
         sidebarItems: [
           // The name of the component in the main.js. All comonents must have descriptions
