@@ -22,8 +22,8 @@ Vue.component('lodash',lodash)
 import DataCachePage from './components/DataCachePage'
 Vue.component('DataCachePage',DataCachePage)
 
-import NestedObjectPage from './components/NestedObjectMixin/NestedObjectPage.vue'
-Vue.component('NestedObjectPage',NestedObjectPage)
+import DataTools from './components/DataToolsMixin/DataTools.vue'
+Vue.component('DataTools',DataTools)
 
 
 

@@ -46,8 +46,8 @@
           { component: "funkyMonkey", description: "dvdvdvdvdv" },
           { component: "lodash", description: "dvdvdvdvdv" },
           { component: "dataCachePage", description: "dataCachePage", url: "/dataCachePage/" },
-          { component: "Title 2", description: "" }, // Header: Description not allowed
-          { component: "NestedObjectPage", description: "Nested Data Object Mixin", },
+          { component: "Mixins", description: "" }, // Header: Description not allowed
+          { component: "DataTools", description: "Data Tools Mixin", },
         ]
       };
     }, //data
