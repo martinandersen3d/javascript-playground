@@ -70,7 +70,7 @@ export default {
     <br><strong>dataCount() - object:</strong> {{ dataCount('states.types.object') }}
     <br><strong>dataCount() - text:</strong> {{ dataCount('states.types.text') }}
     <hr>
-    <br><strong>dataType() - array:</strong> {{ dataType([1,2]) }}
+    <br><strong>dataType([1,2]) - array:</strong> {{ dataType([1,2]) }}
     <br><strong>dataType() - object:</strong> {{ dataType({a:3}) }}
     <br><strong>dataType() - text:</strong> {{ dataType("here is text") }}
     <br><strong>dataType() - number:</strong> {{ dataType(2) }}

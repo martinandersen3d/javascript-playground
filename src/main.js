@@ -25,6 +25,15 @@ Vue.component('DataCachePage',DataCachePage)
 import DataTools from './components/DataToolsMixin/DataTools.vue'
 Vue.component('DataTools',DataTools)
 
+import BlockPage from './components/Block/BlockPage.vue'
+Vue.component('BlockPage',BlockPage)
+
+import Block from './components/Block/Block.vue'
+Vue.component('Block',Block)
+
+import BlockItem from './components/Block/BlockItem.vue'
+Vue.component('BlockItem',BlockItem)
+
 
 
 const app = new Vue({

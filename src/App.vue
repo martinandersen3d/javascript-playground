@@ -48,6 +48,8 @@
           { component: "dataCachePage", description: "dataCachePage", url: "/dataCachePage/" },
           { component: "Mixins", description: "" }, // Header: Description not allowed
           { component: "DataTools", description: "Data Tools Mixin", },
+          { component: "Layout", description: "" }, // Header: Description not allowed
+          { component: "BlockPage", description: "Block" }, // Header: Description not allowed
         ]
       };
     }, //data
