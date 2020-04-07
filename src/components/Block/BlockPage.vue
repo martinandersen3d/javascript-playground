@@ -30,7 +30,7 @@ export default {
 
 <template><div>
 
-<Block layout="fixed_auto" class="tets">
+<Block layout="fixed_auto" :class="'dsfsdf'">
     <BlockItem width="180px">Left</BlockItem>
     <BlockItem>Right</BlockItem>
 </Block>
@@ -58,8 +58,6 @@ export default {
     <BlockItem>Middle</BlockItem>
     <BlockItem width="180px">Right</BlockItem>
 </Block>
-
-
 
 
 </div>

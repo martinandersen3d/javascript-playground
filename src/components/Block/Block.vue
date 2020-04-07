@@ -1,22 +1,24 @@
 <script>
+// layout: fixed_auto | auto_fixed | auto_fixed_auto | fixed_auto_fixed
+
 /* 
-<Block layout="fixed auto" class="tets">
+<Block layout="fixed_auto" class="tets">
     <BlockItem width="180px">Left</BlockItem>
     <BlockItem>Right</BlockItem>
 </Block>
 
-<Block layout="auto fixed">
+<Block layout="auto_fixed">
     <BlockItem>Left</BlockItem>
     <BlockItem width="180px">Right</BlockItem>
 </Block>
 
-<Block layout="auto fixed auto">
+<Block layout="auto_fixed_auto">
     <BlockItem>Left</BlockItem>
     <BlockItem width="180px">Middle</BlockItem>
     <BlockItem>Right</BlockItem>
 </Block>
 
-<Block layout="fixed auto fixed">
+<Block layout="fixed_auto_fixed">
     <BlockItem width="180px">Left</BlockItem>
     <BlockItem>Middle</BlockItem>
     <BlockItem width="180px">Right</BlockItem>
@@ -79,7 +81,7 @@ dl.dl_fixed_auto {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: stretch;
-    align-items: flex-start;
+    align-items: stretch;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -104,7 +106,9 @@ dl.dl_fixed_auto>dt:nth-child(2) {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: stretch;
-    align-items: flex-start;
+    align-items: stretch;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .dl_auto_fixed>dt:nth-child(1) {
@@ -128,7 +132,9 @@ dl.dl_fixed_auto>dt:nth-child(2) {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: stretch;
-    align-items: flex-start;
+    align-items: stretch;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .dl_auto_fixed_auto>dt:nth-child(1) {
@@ -157,7 +163,9 @@ dl.dl_fixed_auto>dt:nth-child(2) {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: stretch;
-    align-items: flex-start;
+    align-items: stretch;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .dl_fixed_auto_fixed>dt:nth-child(1) {

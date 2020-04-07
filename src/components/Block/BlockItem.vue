@@ -1,9 +1,5 @@
 <script>
-// import MyComponent from '@/components/file.vue'
-// import { MyMixin } from '@/components/file.vue'
-// import Vue from 'vue'
-// import {eventBus} from '@/main.js'
-// import router from '@/router'
+// width: 180 | 180px
 export default {
     // components: {MyComponent},
     // mixins: [MyMixin],
