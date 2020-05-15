@@ -1,4 +1,6 @@
 /* 
+TODO: Work in progresss
+
 _.get(object, path, [defaultValue])
 object (Object): The object to query.
 path (Array|string): The path of the property to get.
