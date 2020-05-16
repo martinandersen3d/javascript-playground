@@ -34,6 +34,9 @@ Vue.component('Block',Block)
 import BlockItem from './components/Block/BlockItem.vue'
 Vue.component('BlockItem',BlockItem)
 
+import PageComponentClass from './components/PageComponentClass/PageComponentClass.vue'
+Vue.component('PageComponentClass',PageComponentClass)
+
 
 
 const app = new Vue({
