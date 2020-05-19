@@ -38,7 +38,7 @@
       return {
 
         showSidebar: true,
-        active: "DataTools",
+        active: "FormInputPage",
         description: "select components in the menu",
         sidebarItems: [
           // The name of the component in the main.js. All comonents must have descriptions
@@ -47,6 +47,7 @@
           { component: "lodash", description: "dvdvdvdvdv" },
           { component: "dataCachePage", description: "dataCachePage", url: "/dataCachePage/" },
           { component: "PageComponentClass", description: "Boot With Class" },
+          { component: "FormInputPage", description: "FormInputPage" },
           { component: "Mixins", description: "" }, // Header: Description not allowed
           { component: "DataTools", description: "Data Tools Mixin", },
           { component: "Layout", description: "" }, // Header: Description not allowed

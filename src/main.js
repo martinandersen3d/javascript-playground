@@ -38,6 +38,10 @@ import PageComponentClass from './components/PageComponentClass/PageComponentCla
 Vue.component('PageComponentClass',PageComponentClass)
 
 
+import FormInputPage from './components/FormInput/FormInputPage.vue'
+Vue.component('FormInputPage',FormInputPage)
+
+
 
 const app = new Vue({
   el: '#app',
