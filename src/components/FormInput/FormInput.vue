@@ -94,7 +94,7 @@ export default {
                    return this.options
             }
         },
-        radioGS: {
+        valueGS: {
             get: function() {
                 this.value
             },
@@ -134,12 +134,12 @@ export default {
     <label v-if="labelComputed" :for="idComputed" class="fi-label">{{ labelComputed }}</label>
     
     <!-- Default types -->
-    <input v-if="isType('default')" :id="idComputed" :type="type" value="sfd" class="fi-input">
+    <input v-if="isType('default')" :id="idComputed" :type="type" :value="value" class="fi-input">
 
     <!-- Radio type -->
     <div v-if="isType('radio') && options">
-        <div   class="fi-input"  v-for="( item_value, itemName, item_index) in optionsComputed" :key="item_index">
-              <input type="radio" :name="name" :id="itemName" v-model="radioGS" :value="item_value"  >
+        <div   class="fi-input"  v-for="( itemValue, itemName, itemIndex) in optionsComputed" :key="itemIndex">
+              <input type="radio" :name="name" :id="itemName" v-model="valueGS" :value="itemValue"  >
               <label  :for="itemName">{{ itemName }}</label>
         </div>
     </div>
@@ -148,7 +148,7 @@ export default {
     <div v-if="isType('select') && options">
         <div >
             <select  class="fi-input" v-model="value">
-                <option v-for="( value, name, index) in optionsComputed" value="value" :key="index" >{{ name }}</option>
+                <option v-for="( value, name, index) in optionsComputed" :value="value" :key="index" >{{ name }}</option>
             </select>
         </div>
     </div>
