@@ -5,7 +5,7 @@
 // import router from '@/router'
 
 import PageComponentClass from './PageComponentClass.js'
-import model from './model.js'
+// import model from './model.js'
 
 // module.exports = {page}
 export default {
@@ -22,7 +22,9 @@ export default {
     data() {
         return {
             model: new PageComponentClass(),
-            age: null
+            age: null,
+            // ViewList
+            // table: new ViewList(),
         };
     },
 }

@@ -12,7 +12,8 @@ export default class PageComponentClass {
       value: 50,
       errors: [ 'sdfsdf' ],
       min: 20,
-      max: 25
+      max: 25,
+      required: true
     }
   }
 
