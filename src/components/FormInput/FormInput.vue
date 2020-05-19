@@ -72,9 +72,14 @@ export default {
 <template><div class='FormInput '>
     <label v-if="labelComputed" :for="idComputed" class="fi-label">{{ labelComputed }} 🛈</label>
     <input v-if="type" :id="idComputed" :type="type" value="sfd" class="fi-input">
-    <div class="fi-div-errors"><ul v-for="( errorItem, index) in errorsComputed" :key="index" class="fi-ul-errors">
-        <li>{{ errorItem }}</li>
-    </ul></div>
+    <div class="fi-div-errors" v-if="errorsComputed">
+        <ul v-for="( errorItem, index) in errorsComputed" :key="index" class="fi-ul-errors">
+            <li>{{ errorItem }}</li>
+        </ul>
+    </div>
+    <div class="fi-div-description" v-if="!errorsComputed">
+        fsdffsd
+    </div>
 
 </div>
 </template>
@@ -107,5 +112,10 @@ ul.fi-ul-errors > li{
     padding:0;
     margin:0;
     text-transform: capitalize;
+}
+.fi-div-description{
+    opacity: 50%;
+    font-size:80%;
+    margin: 8px 0 8px 0;
 }
 </style>

@@ -30,7 +30,7 @@ export default {
 </script>
 
 <template><div class='FormInputPage '>
-    <FormInput type="button" name="My_name" label="my_label" :errors="['error1','error2','error3']"></FormInput>
+    <FormInput type="button" name="My_name" label="my_label" :errors="0"></FormInput>
 </div>
 </template>
 
