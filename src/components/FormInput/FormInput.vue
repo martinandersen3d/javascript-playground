@@ -21,6 +21,7 @@ export default {
             type: String
         },
         options: [String, Array, Object, Boolean],
+        required: [String, Boolean],
         type: {
             // type: String,
           validator: function (value) {
@@ -29,7 +30,7 @@ export default {
           }
         },
         value: {
-            type:  [String, Number, Boolean]
+            type:  [String, Number, Boolean, Object]
         },
 
     },
@@ -125,6 +126,7 @@ export default {
     data() {
         return {
             radioValue: 3,
+            selectValue: this.value,
         };
     },
 }
@@ -134,12 +136,12 @@ export default {
     <label v-if="labelComputed" :for="idComputed" class="fi-label">{{ labelComputed }}</label>
     
     <!-- Default types -->
-    <input v-if="isType('default')" :id="idComputed" :type="type" :value="value" class="fi-input">
+    <input v-if="isType('default')" :id="idComputed" :type="type" :value="value" class="fi-input" :required="required === true ? true:''">
 
     <!-- Radio type -->
     <div v-if="isType('radio') && options">
         <div   class="fi-input"  v-for="( itemValue, itemName, itemIndex) in optionsComputed" :key="itemIndex">
-              <input type="radio" :name="name" :id="itemName" v-model="valueGS" :value="itemValue"  >
+              <input type="radio" :name="name" :id="itemName" v-model="value.selection" :value="itemValue"  >
               <label  :for="itemName">{{ itemName }}</label>
         </div>
     </div>
@@ -147,8 +149,8 @@ export default {
     <!-- Select type -->
     <div v-if="isType('select') && options">
         <div >
-            <select  class="fi-input" v-model="value">
-                <option v-for="( value, name, index) in optionsComputed" :value="value" :key="index" >{{ name }}</option>
+            <select  class="fi-input" v-model="value.selection">
+                <option v-for="( itemValue, name, index) in optionsComputed" :value="itemValue" :key="index"  >{{ name }}</option>
             </select>
         </div>
     </div>
