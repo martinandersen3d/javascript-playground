@@ -41,6 +41,9 @@ Vue.component('PageComponentClass',PageComponentClass)
 import FormInputPage from './components/FormInput/FormInputPage.vue'
 Vue.component('FormInputPage',FormInputPage)
 
+import Table1Page from './components/Table1/Table1Page.vue'
+Vue.component('Table1Page',Table1Page)
+
 
 
 const app = new Vue({

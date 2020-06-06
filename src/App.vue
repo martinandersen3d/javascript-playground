@@ -38,7 +38,7 @@
       return {
 
         showSidebar: true,
-        active: "FormInputPage",
+        active: "Table1Page",
         description: "select components in the menu",
         sidebarItems: [
           // The name of the component in the main.js. All comonents must have descriptions
@@ -52,6 +52,7 @@
           { component: "DataTools", description: "Data Tools Mixin", },
           { component: "Layout", description: "" }, // Header: Description not allowed
           { component: "BlockPage", description: "Block" }, // Header: Description not allowed
+          { component: "Table1Page", description: "Table1Page" }, // Header: Description not allowed
         ]
       };
     }, //data

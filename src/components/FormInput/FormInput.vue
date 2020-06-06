@@ -136,7 +136,7 @@ export default {
     <label v-if="labelComputed" :for="idComputed" class="fi-label">{{ labelComputed }}</label>
     
     <!-- Default types -->
-    <input v-if="isType('default')" :id="idComputed" :type="type" :value="value" class="fi-input" :required="required === true ? true:''">
+    <input v-if="isType('default')" :id="idComputed" :type="type" :value="value" class="fi-input" :required="required === true ? 'true':null">
 
     <!-- Radio type -->
     <div v-if="isType('radio') && options">
