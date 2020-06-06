@@ -17,6 +17,7 @@ export default {
         toggle(){
             if( this.selection.length  === this.items.length ){
                 this.selection = []
+                this.$refs.firstCheckbox.value = 0
             }
             else if( this.selection.length > 0 ){
                 this.selection = [...this.items]
@@ -47,7 +48,7 @@ export default {
 
     <table class="w3-table">
     <tr>
-      <th><input @click="toggle()" type="checkbox"/></th>
+      <th><input ref="firstCheckbox" @click="toggle()" type="checkbox"/></th>
       <th v-for="( item, index) in Object.keys(titles)" :key="index">{{ item }}</th>
       
     </tr>
@@ -92,11 +93,15 @@ export default {
     /* First Row */
     tr th:first-child, tr td:first-child {
         width: 48px;
-        padding: 0;
+        padding: 0 0px 0 14px;
     } 
     tr input[type='checkbox'] {
         height: 20px;
         width: 20px;
+        margin-bottom: -2px;
+        top: 3px;
+        position: relative;
+
     }
 
 
