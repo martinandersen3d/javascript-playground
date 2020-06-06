@@ -32,6 +32,8 @@ export default {
                 {id:1, name: 'a', age:11 },
                 {id:2, name: 'b', age:22 },
                 {id:3, name: 'c', age:33 },
+                {id:3, name: 'c', age:33 },
+                {id:3, name: 'c', age:33 },
             ],
             // from route or prop
             sourceId: null

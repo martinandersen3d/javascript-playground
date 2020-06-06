@@ -4,6 +4,7 @@
 // import Vue from 'vue'
 // import {eventBus} from '@/main.js'
 // import router from '@/router'
+
 export default {
     // components: {MyComponent},
     // mixins: [MyMixin],
@@ -21,17 +22,23 @@ export default {
             }
             else if( this.selection.length > 0 ){
                 this.selection = [...this.items]
+                this.$refs.firstCheckbox.value = 1
             }
             else if( this.selection.length === 0 ){
                 this.selection = [...this.items]
+                this.$refs.firstCheckbox.value = 1
             }
             else{
                 this.selection = []
+                this.$refs.firstCheckbox.value = 0
             }
         },
         clickChild(e){
-            console.log(e)
-            // let el = e.target
+            let el = e.target
+            try {
+                let firstChild = el.childNodes[0]
+                firstChild.click()
+            } catch (err) {}
         }
     }, //__________________________________________
 
@@ -53,7 +60,7 @@ export default {
       
     </tr>
     <tr  v-for="( item, index) in items" :key="index">
-        <td><input type="checkbox" v-model="selection" :value="item" /></td>
+        <td @click="clickChild"><input type="checkbox" v-model="selection" :value="item" /></td>
         <td v-for="(td, index2) in Object.keys(item)" :key="index2">{{ item[td] }}</td>
     </tr>
     </table>
@@ -90,16 +97,18 @@ export default {
         color:white;
         cursor: pointer;
     }
+
+    
     /* First Row */
     tr th:first-child, tr td:first-child {
         width: 48px;
         padding: 0 0px 0 14px;
     } 
     tr input[type='checkbox'] {
-        height: 20px;
-        width: 20px;
+        height: 18px;
+        width: 18px;
         margin-bottom: -2px;
-        top: 3px;
+        top: 4px;
         position: relative;
 
     }
